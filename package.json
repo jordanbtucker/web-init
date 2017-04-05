@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/jordanbtucker/node-init/issues"
   },
-  "homepage": "https://github.com/jordanbtucker/node-init#readme"
+  "homepage": "https://github.com/jordanbtucker/node-init#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.2.0"
+  }
 }
