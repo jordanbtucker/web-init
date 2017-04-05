@@ -1,0 +1,19 @@
+{
+  "name": "node-init",
+  "version": "0.0.0",
+  "description": "Starting point for Node.js projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test -Rspec --cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanbtucker/node-init.git"
+  },
+  "author": "Jordan Tucker <jordanbtucker@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jordanbtucker/node-init/issues"
+  },
+  "homepage": "https://github.com/jordanbtucker/node-init#readme"
+}
