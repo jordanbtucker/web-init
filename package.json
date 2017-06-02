@@ -4,7 +4,8 @@
   "description": "Starting point for Node.js projects",
   "main": "index.js",
   "scripts": {
-    "test": "tap test -Rspec --cov"
+    "test": "tap test -Rspec --cov",
+    "lint": "eslint . --fix"
   },
   "repository": {
     "type": "git",
