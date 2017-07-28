@@ -1,12 +1,21 @@
 {
-	"extends": "standard",
-	"plugins": [
-		"standard",
-		"promise"
-	],
+	"parserOptions": {
+		"ecmaVersion": 6
+	},
 	"env": {
+		"node": true,
 		"es6": true
 	},
+	"plugins": [
+		"node",
+		"promise",
+		"standard"
+	],
+	"extends": [
+		"standard",
+		"plugin:node/recommended",
+		"plugin:promise/recommended"
+	],
 	"rules": {
 		"comma-dangle": [
 			"error",
