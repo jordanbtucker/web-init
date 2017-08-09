@@ -1,6 +1,6 @@
 # EditorConfig is awesome: http://EditorConfig.org
 
-root = *
+root = true
 
 [*]
 indent_style = tab
