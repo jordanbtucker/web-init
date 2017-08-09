@@ -31,10 +31,14 @@
 			"error",
 			"tab"
 		],
+		"no-process-exit": "off",
 		"no-tabs": "off",
 		"object-curly-spacing": [
 			"error",
 			"never"
-		]
+		],
+		"promise/always-return": "off",
+		"promise/avoid-new": "off",
+		"promise/catch-or-return": "off"
 	}
 }
