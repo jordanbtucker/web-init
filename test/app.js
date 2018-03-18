@@ -4,9 +4,9 @@ const tap = require('tap')
 
 const App = require('../lib/app')
 
-tap.test('App', t => {
-	t.test('run', t => {
-		t.test(`logs 'Hello, $NAME!'`, async t => {
+tap.test('App', async t => {
+	await t.test('run', async t => {
+		await t.test(`logs 'Hello, $NAME!'`, async t => {
 			const message = `Hello, ${process.env.NAME}!`
 
 			const mock = sinon.mock(console)
@@ -19,9 +19,6 @@ tap.test('App', t => {
 
 			mock.verify()
 			mock.restore()
-			t.end()
 		})
-		t.end()
 	})
-	t.end()
 })
