@@ -10,11 +10,13 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "coverage": "npm test && tap --coverage-report=html",
+    "coverage": "npm run tap & tap --coverage-report=html",
     "debug": "cross-env DEBUG=* npm start",
     "lint": "eslint --fix .",
+    "preversion": "npm test",
     "start": "node lib",
-    "test": "npm run lint && tap test -Rspec --cov"
+    "tap": "tap test -Rspec --cov",
+    "test": "npm run lint && npm run tap"
   },
   "repository": {
     "type": "git",
