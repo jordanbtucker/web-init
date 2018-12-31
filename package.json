@@ -11,7 +11,6 @@
   },
   "scripts": {
     "coverage": "npm run tap & tap --coverage-report=html",
-    "debug": "cross-env DEBUG=* npm start",
     "lint": "eslint --fix .",
     "preversion": "npm test",
     "start": "node lib",
@@ -29,7 +28,6 @@
   },
   "homepage": "https://github.com/jordanbtucker/node-init#readme",
   "dependencies": {
-    "debug": "^4.1.0",
     "dotenv": "^6.1.0"
   },
   "devDependencies": {
