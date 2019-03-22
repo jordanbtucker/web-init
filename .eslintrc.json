@@ -4,7 +4,12 @@
     "eslint:recommended",
     "plugin:import/recommended",
     "plugin:promise/recommended",
-    "plugin:node/recommended",
     "prettier"
-  ]
+  ],
+  "env": {
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  }
 }

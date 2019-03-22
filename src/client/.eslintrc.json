@@ -1,0 +1,12 @@
+{
+  "extends": ["plugin:react/recommended", "prettier/react"],
+  "env": {
+    "browser": true,
+    "commonjs": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

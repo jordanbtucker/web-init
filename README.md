@@ -1,3 +1,3 @@
-# node-init
+# web-init
 
-Starting point for Node.js projects
+Starting point for web projects.
