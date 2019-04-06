@@ -28,17 +28,17 @@
   },
   "homepage": "https://github.com/jordanbtucker/node-init#readme",
   "dependencies": {
-    "dotenv": "^6.2.0"
+    "dotenv": "^7.0.0"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "eslint": "^5.15.1",
+    "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
-    "sinon": "^7.2.7",
-    "tap": "^12.5.3"
+    "sinon": "^7.3.1",
+    "tap": "^12.6.1"
   }
 }
