@@ -13,8 +13,8 @@
   "scripts": {
     "coverage": "run-s -c tap tap-coverage",
     "eslint": "eslint --fix .",
-    "prettier": "prettier --loglevel warn --write **/*.{js,json,md,yml}",
     "lint": "run-s eslint prettier",
+    "prettier": "prettier --loglevel warn --write **/*.{js,json,md,yml}",
     "preversion": "npm test",
     "start": "node lib",
     "tap": "tap test -R spec",
