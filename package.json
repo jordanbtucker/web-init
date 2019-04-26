@@ -1,13 +1,14 @@
 {
   "name": "node-init",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Starting point for Node.js projects",
+  "private": true,
   "main": "lib/index.js",
   "files": [
-    "lib/"
+    "lib"
   ],
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=8"
   },
   "scripts": {
     "coverage": "run-s -c tap tap-coverage",
@@ -20,16 +21,6 @@
     "tap-coverage": "tap --coverage-report html",
     "test": "run-s lint tap"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jordanbtucker/node-init.git"
-  },
-  "author": "Jordan Tucker <jordanbtucker@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jordanbtucker/node-init/issues"
-  },
-  "homepage": "https://github.com/jordanbtucker/node-init#readme",
   "dependencies": {
     "dotenv": "^7.0.0"
   },
