@@ -1,0 +1,6 @@
+{
+  "linters": {
+    "**/*.js": "eslint",
+    "**/*.{js,json,md,yml}": "prettier -c"
+  }
+}
