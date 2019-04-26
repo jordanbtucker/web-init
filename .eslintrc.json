@@ -5,6 +5,6 @@
     "plugin:import/recommended",
     "plugin:promise/recommended",
     "plugin:node/recommended",
-    "plugin:prettier/recommended"
+    "prettier"
   ]
 }
