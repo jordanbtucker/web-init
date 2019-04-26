@@ -11,7 +11,9 @@
   },
   "scripts": {
     "coverage": "run-s -c tap tap-coverage",
-    "lint": "eslint --fix .",
+    "eslint": "eslint --fix .",
+    "prettier": "prettier --loglevel warn --write **/*.{json,md,yml}",
+    "lint": "run-s eslint prettier",
     "preversion": "npm test",
     "start": "node lib",
     "tap": "tap test -R spec",
@@ -34,12 +36,15 @@
   "devDependencies": {
     "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
     "npm-run-all": "^4.1.5",
+    "prettier": "^1.17.0",
     "sinon": "^7.3.2",
     "tap": "^13.0.1"
   }
