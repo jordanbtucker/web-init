@@ -9,7 +9,6 @@ const baseURL = `http://${config.host}:${config.port}`
 t.test('app', async t => {
   t.beforeEach(done => {
     t.server = app.listen(config.port, config.host, done)
-    app.setup(t.server)
   })
 
   t.afterEach(async () => {
