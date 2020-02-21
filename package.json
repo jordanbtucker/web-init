@@ -9,7 +9,7 @@
     "lib"
   ],
   "engines": {
-    "node": ">=8.12.0"
+    "node": ">=12.0.0"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
@@ -66,7 +66,7 @@
     "eslint-plugin-react": "^7.18.3",
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
-    "husky": "^4.2.1",
+    "husky": "^4.2.3",
     "jquery": "^3.4.1",
     "lint-staged": "^10.0.7",
     "node-sass": "^4.13.1",
