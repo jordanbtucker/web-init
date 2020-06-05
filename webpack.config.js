@@ -54,7 +54,9 @@ if (serverConfig.isDev) {
       target: `http://${serverConfig.devServerHost}:${serverConfig.devServerPort}`,
       ws: true,
     },
-    public: serverConfig.publicHost,
+    public: serverConfig.ngrokSubdomain
+      ? `${serverConfig.ngrokSubdomain}.ngrok.io`
+      : serverConfig.publicHost,
     writeToDisk: true,
   }
 
