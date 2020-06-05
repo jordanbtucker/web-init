@@ -16,7 +16,7 @@
     "coverage": "run-s -c spec tap-coverage",
     "dev": "concurrently -c green,blue npm:dev-server npm:dev-client",
     "dev-client": "nodemon -w .env -w package.json -w webpack.config.js -x webpack-dev-server",
-    "dev-server": "nodemon -w .env -w package.json -w lib/server lib/server",
+    "dev-server": "cross-env DEV_SERVER=1 nodemon -w .env -w package.json -w lib/server lib/server",
     "eslint": "eslint --fix .",
     "lint": "run-s eslint prettier",
     "prettier": "prettier --loglevel warn --write **/*.{babelrc,css,html,js,json,md,scss}",
