@@ -23,7 +23,7 @@
     "preversion": "npm test",
     "spec": "run-s build tap",
     "start": "cross-env NODE_ENV=production node lib/server",
-    "tap": "cross-env NODE_ENV=production tap test -j 1 -R spec",
+    "tap": "cross-env NODE_ENV=test tap test -j 1 -R spec",
     "tap-coverage": "tap --coverage-report html",
     "test": "run-s lint spec"
   },
