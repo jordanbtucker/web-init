@@ -47,9 +47,6 @@ web_modules/
 # TypeScript cache
 *.tsbuildinfo
 
-# TypeScript cache
-*.tsbuildinfo
-
 # Optional npm cache directory
 .npm
 
@@ -92,10 +89,6 @@ dist
 # Comment in the public line in if your project uses Gatsby and not Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
-
-# gatsby files
-.cache/
-public
 
 # vuepress build output
 .vuepress/dist
