@@ -6,12 +6,10 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const serverConfig = require('./lib/server/config')
 
-const isDev = process.env.NODE_ENV !== 'production'
-
 const config = {
-  devtool: isDev ? 'source-map' : undefined,
+  devtool: serverConfig.isDev ? 'source-map' : undefined,
   entry: ['./src/client/index.js'],
-  mode: isDev ? 'development' : 'production',
+  mode: serverConfig.isDev ? 'development' : 'production',
   module: {
     rules: [
       {
@@ -42,7 +40,7 @@ const config = {
   ],
 }
 
-if (isDev) {
+if (serverConfig.isDev) {
   config.devServer = {
     contentBase: false,
     historyApiFallback: true,
