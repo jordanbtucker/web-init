@@ -16,8 +16,6 @@ t.test('api', async t => {
   })
 
   await t.test('200 /api/messages', async () => {
-    await supertest(baseURL)
-      .get('/api/messages')
-      .expect(200)
+    await supertest(baseURL).get('/api/messages').expect(200)
   })
 })

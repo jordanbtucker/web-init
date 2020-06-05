@@ -16,8 +16,6 @@ t.test('app', async t => {
   })
 
   await t.test('200 /', async () => {
-    await supertest(baseURL)
-      .get('/')
-      .expect(200)
+    await supertest(baseURL).get('/').expect(200)
   })
 })
