@@ -36,6 +36,7 @@ const config = {
   plugins: [
     new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
+      cache: false,
       template: './src/client/index.html',
     }),
   ],
