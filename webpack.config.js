@@ -55,6 +55,7 @@ if (isDev) {
       target: `http://${serverConfig.devServerHost}:${serverConfig.devServerPort}`,
       ws: true,
     },
+    public: serverConfig.publicHost,
     writeToDisk: true,
   }
 
